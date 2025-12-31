@@ -3,7 +3,7 @@ import TextInputForm from "./TextInputForm"
 function TextInputFormContainer({ onSubmit }) {
 
     const [value, setValue] = useState('');
-        const [inputType, setInputType] = useState('password');
+    const [inputType, setInputType] = useState('password');
 
     function handleFormSubmit(event) {
         event.preventDefault();

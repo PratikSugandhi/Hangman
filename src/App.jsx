@@ -1,4 +1,8 @@
 import TextInputFormContainer from "./Components/TextInputForm/TextInputFormContainer.jsx";
+import PlayGame from "./Pages/PlayGame/PlayGame.jsx";
+import StartGame from "./Pages/StartGame/StartGame.jsx";
+import { Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 function App()
 {
   return(
@@ -7,6 +11,13 @@ function App()
         
       <TextInputFormContainer onSubmit={(value) => console.log("Value coming from the hidden form is", value)} />        
 
+      <Routes>
+          <Route path="/play" element={<PlayGame />} />
+          <Route path="/start" element={<StartGame />} />
+          <Route path="*" element={<div> not found </div>} />
+      </Routes>
+    <br />
+    <Link to='/start'>Start Game</Link>
     </>
   );
 }
