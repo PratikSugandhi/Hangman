@@ -3,6 +3,7 @@ import PlayGame from "./Pages/PlayGame/PlayGame.jsx";
 import StartGame from "./Pages/StartGame/StartGame.jsx";
 import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
+import "./custum.css"
 function App()
 {
   return(
